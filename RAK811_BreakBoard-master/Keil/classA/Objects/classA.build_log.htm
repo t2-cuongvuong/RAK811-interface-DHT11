@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Vuong Van Cuong Microsoft, Microsoft, LIC=6XJII-TXYY3-SENH0-BEHRG-B0KQR-D3NXF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.26.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\T2TECHHUB\RAk811\Lora_811\sourse code\RAK811_BreakBoard\RAK811_BreakBoard-master\Keil\classA\classA.uvprojx
+Project File Date:  07/23/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'RAK811_breakboard'
+compiling main.c...
+..\..\src\apps\classA\main.c(213): warning:  #550-D: variable "altitudeGps"  was set but never used
+  	int16_t altitudeGps = 0xFFFF;
+..\..\src\apps\classA\main.c(214): warning:  #550-D: variable "ret"  was set but never used
+  	uint8_t ret;
+..\..\src\apps\classA\main.c(317): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  			printf("\r\nDHT11!\r\n\r\n %d.%d %RH , %d.%d *C \r\n",DHT11_DATA.humi_int,DHT11_DATA.humi_deci,DHT11_DATA.temp_int,DHT11_DATA.temp_deci);
+..\..\src\apps\classA\main.c(317): warning:  #224-D: the format string requires additional arguments
+  			printf("\r\nDHT11!\r\n\r\n %d.%d %RH , %d.%d *C \r\n",DHT11_DATA.humi_int,DHT11_DATA.humi_deci,DHT11_DATA.temp_int,DHT11_DATA.temp_deci);
+..\..\src\apps\classA\main.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=64702 RO-data=1722 RW-data=420 ZI-data=5948  
+FromELF: creating hex file...
+After Build - User command #1: C:\Keil_v5\ARM\ARMCC\bin\fromelf.exe --bin Objects\classA.axf --output classA.bin
+".\Objects\classA.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L1xx_DFP.1.2.0.pack
+                Keil.STM32L1xx_DFP.1.2.0
+                STMicroelectronics STM32L1 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_RAK811_breakboard
+  C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
